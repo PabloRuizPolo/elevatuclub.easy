@@ -3,8 +3,10 @@
   width: 100%;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+.purple-text {
+  color: #5252ff;
 }
 .banner_image {
   position: absolute;
@@ -27,9 +29,40 @@
   align-items: center;
   margin: auto 5%;
   z-index: 1;
-  background-color: #b0b0fe80;
+  background-color: #b0b0fe90;
 }
 .banner_text {
   text-align: center;
   padding: 3%;
+  font-family: var(--main-font-family);
+}
+
+.banner-form {
+  border-bottom: none;
+  background: linear-gradient(
+    99deg,
+    rgba(66, 19, 39, 1) 0%,
+    rgba(101, 86, 141, 1) 47%,
+    rgba(82, 82, 255, 1) 100%
+  );
+  height: 50px;
+  width: 151px;
+  z-index: 1;
+  margin-bottom: 4%;
+  margin-left: 7%;
+  box-shadow: 6px 7px 10px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  display: flex;
+}
+
+.demo-text {
+  color: white;
+  margin: auto;
+  text-align: center;
+  font-size: 1rem;
+  font-family: var(--main-text-font);
+}
+
+.banner-form div {
+  display: flex;
 }

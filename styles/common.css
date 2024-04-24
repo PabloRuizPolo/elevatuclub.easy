@@ -11,5 +11,14 @@
   --main-font-family: MTVGRAVITYGROTESK;
   --main-text-font: Helvetica-Bold;
   font-size: 16px;
-  /*background: rgb(82, 82, 255);*/
+  background: rgb(82, 82, 255);
+  --main-color: #5252ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
