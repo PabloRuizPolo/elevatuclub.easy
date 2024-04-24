@@ -1,0 +1,35 @@
+.sliders {
+  height: 75dvh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.9;
+  height: 75dvh;
+  width: 100%;
+  background-image: url(../../multimedia/hijonandi.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 5%;
+  z-index: 1;
+  background-color: #b0b0fe80;
+}
+.banner_text {
+  text-align: center;
+  padding: 3%;
+}

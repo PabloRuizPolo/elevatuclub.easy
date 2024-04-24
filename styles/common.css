@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "MTVGRAVITYGROTESK";
+  src: url("../multimedia/MTVGRAVITYGROTESK.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url("../multimedia/Helvetica-Bold.ttf") format("ttf");
+}
+
+:root {
+  --main-font-family: MTVGRAVITYGROTESK;
+  --main-text-font: Helvetica-Bold;
+  font-size: 16px;
+  /*background: rgb(82, 82, 255);*/
+}
