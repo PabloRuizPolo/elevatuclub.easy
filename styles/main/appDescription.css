@@ -26,3 +26,57 @@
   height: 303px;
   padding-top: 57px;
 }
+
+.app-details-wrapper {
+  width: 90%;
+  margin: 4% auto;
+}
+
+.app-list-div {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: (1, 1fr);
+}
+.app-div-list li + li {
+  margin-top: 5%;
+}
+
+.app-div {
+  margin: auto;
+  height: 250px;
+  width: 199px;
+  border: solid 1px white;
+  border-radius: 13px;
+  color: white;
+  background-color: rgba(82, 82, 255, 0.67);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-div-title {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.app-div img {
+  width: 100%;
+}
+
+.app-div-text {
+  font-size: 0.7em;
+  text-align: center;
+  margin: auto 5%;
+}
+
+@media (width >768px) {
+  .app-div-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .app-div-list li {
+    margin-top: 5%;
+  }
+}
