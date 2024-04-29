@@ -14,8 +14,29 @@
     <link rel="stylesheet" href="./styles/main/clubRelation.css" />
     <link rel="stylesheet" href="./styles/main/appDescription.css" />
     <link rel="stylesheet" href="./styles/main/form-container.css" />
+    <link rel="stylesheet" href="./styles/main/opinions.css" />
+    <style>
+      .progress {
+        background-color: rgb(255 255 255 / 47%);
+        height: 3px;
+        width: 10px;
+        position: fixed;
+        z-index: 100;
+        animation: progress linear;
+        animation-timeline: scroll();
+      }
+      @keyframes progress {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
+    <div class="progress"></div>
     <header class="header">
       <div class="brand-container">
         <h2 class="eleva">ELEVA TU CLUB</h2>
@@ -28,6 +49,7 @@
       <div class="menu-container"></div>
     </header>
     <main>
+      <div class="progress"></div>
       <section class="sliders">
         <div class="banner_image"></div>
         <div class="banner_content">
@@ -146,7 +168,9 @@
         </section>
       </section>
       <section class="app-description">
-        <h2 class="title">TODO LO QUE NECESITAS EN UN MISO SITIO</h2>
+        <h2 class="title">
+          <span>TODO LO QUE NECESITAS EN UN MISO SITIO</span>
+        </h2>
         <div class="video-app-container">
           <img
             src="./multimedia/iphone-160307_1280-removebg-preview.png"
@@ -223,7 +247,65 @@
         </section>
       </a>
 
-      <section class="opinions"></section>
+      <section class="opinions">
+        <h2 class="title">¿QUÉ PIENSAN NUESTROS CLIENTES?</h2>
+        <section class="opinions-wrapper">
+          <article class="opinion-container">
+            <div class="opinion-text">
+              <img
+                src="./multimedia/jaimeArtigues.png"
+                alt="Entrenador Jaime"
+              />
+              <p>
+                Como coordinador del club, el feedback que recibo de los
+                entrenadore es muy bueno. Se ve mejoría en todas las categorías,
+                y ya no me tengo que preocupar de nada en cuanto a gestión de la
+                preparación física
+              </p>
+            </div>
+            <div class="opinion-info-person">
+              Jaime Artigues - Coordinador CB. La Salle Palma
+            </div>
+          </article>
+          <article class="opinion-container reverse">
+            <div class="opinion-text">
+              <img src="./multimedia/anaPolo.png" alt="Entrenadora Ana" />
+              <p>
+                Asegura el desarrollo físico-motriz del jugador. Se trabaja lo
+                importante en cada categoría, asociado a la edad del jugador.
+                Buen trabajo y servicio muy serio y profesional.
+              </p>
+            </div>
+            <div class="opinion-info-person">
+              Ana Polo - Entrenadora Mini Masculino A y Selección Balear
+            </div>
+          </article>
+          <article class="opinion-container">
+            <div class="opinion-text">
+              <img src="/multimedia/moragon.png" alt="Entrenador Cadete" />
+              <p>
+                Gran calidad de trabajo. Hace que el equipo esté a tope cuando
+                tiene que estarlo. Asegura la evolución de las jugadoras
+              </p>
+            </div>
+            <div class="opinion-info-person">
+              Pablo Moragón - Entrenador Cadete Femenino A
+            </div>
+          </article>
+          <article class="opinion-container reverse">
+            <div class="opinion-text">
+              <img src="/multimedia/moragon.png" alt="Entrenador Cadete" />
+              <p>
+                Gran calidad de trabajo. Hace que el equipo esté a tope cuando
+                tiene que estarlo asegura la evolución de las jugadoras
+              </p>
+            </div>
+            <div class="opinion-info-person">
+              Borja Dañobeitia - Entrenador Infantil Femenino A
+            </div>
+          </article>
+        </section>
+      </section>
     </main>
     <footer></footer>
   </body>
