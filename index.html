@@ -38,19 +38,56 @@
   <body>
     <div class="progress"></div>
     <header class="header">
-      <div class="brand-container">
-        <h2 class="eleva">ELEVA TU CLUB</h2>
-        <img
-          class="logo-img"
-          src="./multimedia/ELEVALOGO.svg"
-          alt="eleva-logo"
-        />
-      </div>
-      <div class="menu-container"></div>
+      <nav class="navbar">
+        <a href="#sliders">
+          <div class="brand-container">
+            <h2 class="eleva">ELEVA TU CLUB</h2>
+            <img
+              class="logo-img"
+              src="./multimedia/ELEVALOGO.svg"
+              alt="eleva-logo"
+            />
+          </div>
+        </a>
+
+        <label class="labe-hamburguesa" for="menu-hamburguesa">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            class="list-icon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </label>
+        <input type="checkbox" id="menu-hamburguesa" class="menu-hamburguesa" />
+        <ul class="ul-links">
+          <li>
+            <a class="links" href="#como-funciona">¿Cómo funciona?</a>
+          </li>
+          <li>
+            <a class="links" href="#opinions">Opiniones</a>
+          </li>
+          <li>
+            <a class="links" href="">Contacto</a>
+          </li>
+          <li>
+            <a class="links" href="">Sobre mí</a>
+          </li>
+          <li>
+            <a class="links" href="">ElevaTuClub</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="progress"></div>
-      <section class="sliders">
+      <section class="sliders" id="sliders">
         <div class="banner_image"></div>
         <div class="banner_content">
           <h1 class="banner_text">
@@ -167,7 +204,7 @@
           </h2>
         </section>
       </section>
-      <section class="app-description">
+      <section class="app-description" id="como-funciona">
         <h2 class="title">
           <span>TODO LO QUE NECESITAS EN UN MISO SITIO</span>
         </h2>
@@ -247,7 +284,7 @@
         </section>
       </a>
 
-      <section class="opinions">
+      <section class="opinions" id="opinions">
         <h2 class="title">¿QUÉ PIENSAN NUESTROS CLIENTES?</h2>
         <section class="opinions-wrapper">
           <article class="opinion-container">
@@ -257,23 +294,23 @@
                 alt="Entrenador Jaime"
               />
               <p>
-                Como coordinador del club, el feedback que recibo de los
+                "Como coordinador del club, el feedback que recibo de los
                 entrenadore es muy bueno. Se ve mejoría en todas las categorías,
                 y ya no me tengo que preocupar de nada en cuanto a gestión de la
-                preparación física
+                preparación física."
               </p>
             </div>
             <div class="opinion-info-person">
               Jaime Artigues - Coordinador CB. La Salle Palma
             </div>
           </article>
-          <article class="opinion-container reverse">
-            <div class="opinion-text">
+          <article class="opinion-container">
+            <div class="reverse">
               <img src="./multimedia/anaPolo.png" alt="Entrenadora Ana" />
               <p>
-                Asegura el desarrollo físico-motriz del jugador. Se trabaja lo
+                "Asegura el desarrollo físico-motriz del jugador. Se trabaja lo
                 importante en cada categoría, asociado a la edad del jugador.
-                Buen trabajo y servicio muy serio y profesional.
+                Buen trabajo y servicio muy serio y profesional."
               </p>
             </div>
             <div class="opinion-info-person">
@@ -282,22 +319,31 @@
           </article>
           <article class="opinion-container">
             <div class="opinion-text">
-              <img src="/multimedia/moragon.png" alt="Entrenador Cadete" />
+              <img src="/multimedia/Moragon.jpeg" alt="Entrenador Cadete" />
               <p>
-                Gran calidad de trabajo. Hace que el equipo esté a tope cuando
-                tiene que estarlo. Asegura la evolución de las jugadoras
+                "Trabajamos toda la temporada con Pablo y el equipo ha llegado
+                perfectamente preparado a nivel físico. Pese a estar a
+                distancia, hay un seguimiento muy cercano, adaptándose a las
+                necesidades de la competición y las jugadoras pueden ejecutar
+                técnicamente bien los ejercicios gracias a los videos colgados
+                en la pltaforma."
               </p>
             </div>
             <div class="opinion-info-person">
               Pablo Moragón - Entrenador Cadete Femenino A
             </div>
           </article>
-          <article class="opinion-container reverse">
-            <div class="opinion-text">
+          <article class="opinion-container">
+            <div class="reverse">
               <img src="/multimedia/moragon.png" alt="Entrenador Cadete" />
               <p>
-                Gran calidad de trabajo. Hace que el equipo esté a tope cuando
-                tiene que estarlo asegura la evolución de las jugadoras
+                "Pablo es un preparador físico que conoce muy bien el mundo del
+                baloncesto de formación y todo lo que conlleva. Adapta y
+                personaliza el trabajo del equipo en función del momento de la
+                temporada y de otros factores más específicos como jornadas
+                clave, cargas de las jugadoras, etc. Es un placer trabajar con
+                él: es persona capaz que cumple los plazos con una comunicación
+                muy efectiva."
               </p>
             </div>
             <div class="opinion-info-person">
