@@ -41,8 +41,6 @@
   display: grid;
   grid-template-columns: (1, 1fr);
 }
-.app-div-list ul {
-}
 
 .app-div-list li {
   margin-top: 13%;
@@ -64,6 +62,7 @@
 .app-div-title {
   text-align: center;
   font-size: 0.9em;
+  padding-top: 12px;
 }
 
 .app-div img {

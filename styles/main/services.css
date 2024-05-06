@@ -48,18 +48,20 @@
   border-radius: 10px;
 }
 .description-service-container {
-  border: solid 1px green;
   border-radius: 10px;
   width: 73%;
-  background-color: #d9d9d982;
-  mix-blend-mode: soft-light;
+  background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .description-service {
   font-size: 0.7em;
   font-family: helvetica light;
-  color: rgb(0, 0, 0);
   padding: 3% 8%;
+  color: white;
+}
+
+.description-service-container ul li {
+  list-style-type: disc;
 }
 
 .description-service-container ul li + li {

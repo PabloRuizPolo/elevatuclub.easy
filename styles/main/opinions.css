@@ -25,15 +25,21 @@
   background-color: #d3ddff;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   box-shadow: 5px -3px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 4px;
 }
 .reverse {
   background-color: #d3ddff;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   box-shadow: 5px -3px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 4px;
 }
 
 .opinion-text img {
@@ -44,18 +50,27 @@
   margin: auto;
   margin-left: 3px;
 }
+
+.reverse img {
+  position: relative;
+  width: 31%;
+  object-fit: fill;
+  border-radius: 10px;
+  margin: auto;
+  margin-right: 3px;
+}
 .opinion-text p {
-  font-size: 0.7em;
+  font-size: 0.65em;
   color: black;
-  padding: 0% 2%;
+  padding: 1% 4%;
   justify-content: center;
   align-items: center;
   text-align: start;
 }
 .reverse p {
-  font-size: 0.7em;
+  font-size: 0.65em;
   color: black;
-  padding: 0% 2%;
+  padding: 1% 4%;
   justify-content: center;
   align-items: center;
   text-align: end;
