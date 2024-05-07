@@ -128,18 +128,18 @@ ul {
   }
 }
 
-@media (min-width: 1024) {
+@media (width > 1023px) {
   .ul-links {
-    gap: 50px;
+    gap: 55px;
   }
   .links {
     font-size: 1.3rem;
   }
   .eleva {
-    font-size: 1.5rem;
-    width: 275px;
+    font-size: 1.4rem;
+    width: 226px;
   }
   .logo-img {
-    max-height: 60px;
+    max-height: 38px;
   }
 }

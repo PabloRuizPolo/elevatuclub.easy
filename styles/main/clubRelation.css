@@ -12,7 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 586px;
+  height: 100%;
   width: 100%;
 }
 
@@ -26,6 +26,7 @@
   color: white;
   flex-direction: column;
   background-color: rgba(118, 146, 245, 0.45);
+  padding: 0 6px;
 }
 .club-relationship-text-title {
   padding-left: 2%;
@@ -39,4 +40,55 @@
   font-size: 1.5em;
   height: 66.6%;
   text-align: center;
+}
+
+@media (min-width: 506px) and (max-width: 581px) {
+  .club-relationship-text {
+    padding-top: 19px;
+  }
+}
+@media (min-width: 581px) and (max-width: 770px) {
+  .club-relationship-text-title {
+    font-size: 2em;
+  }
+  .club-relationship-text {
+    padding-top: 19px;
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .club-relationship {
+    height: 645px;
+  }
+  .club-relationship-text-title {
+    font-size: 2.5em;
+  }
+  .club-relationship-text {
+    padding-top: 19px;
+    font-size: 2em;
+  }
+  .club-relationship-text-container {
+    width: 75%;
+  }
+}
+
+@media (width >1023px) {
+  .club-relationship {
+    height: 669px;
+  }
+  .club-relationship-text-title {
+    font-size: 2.5em;
+  }
+  .club-relationship-text {
+    padding-top: 19px;
+    font-size: 2em;
+  }
+  .club-relationship-text-container {
+    width: 60%;
+  }
+  .club-relationship-img {
+    background-image: url(../../multimedia/ccb1e395-c2a4-48c3-b067-fd4ec62c878b.png);
+    height: 100%;
+  }
 }

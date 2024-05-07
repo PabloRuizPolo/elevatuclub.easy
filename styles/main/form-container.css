@@ -10,8 +10,10 @@
   height: 38dvh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 34px;
+  padding-bottom: 26px;
 }
 
 .form-container h2 {

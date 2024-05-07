@@ -6,6 +6,11 @@
     rgba(43, 43, 114, 1) 69%,
     rgba(15, 15, 74, 1) 100%
   );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
 }
 
 .title {
@@ -19,6 +24,10 @@
 
 .wraper-services {
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .wrap-service {
   display: flex;
@@ -52,9 +61,11 @@
   width: 73%;
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .description-service {
-  font-size: 0.7em;
   font-family: helvetica light;
   padding: 3% 8%;
   color: white;
@@ -62,8 +73,54 @@
 
 .description-service-container ul li {
   list-style-type: disc;
+  font-size: 0.6em;
 }
 
 .description-service-container ul li + li {
   margin-top: 2%;
+}
+
+@media (min-width: 550px) and (max-width: 768px) {
+  .title {
+    font-size: 1.8em;
+  }
+  .wraper-services {
+    width: 85%;
+  }
+
+  .description-service-container ul li {
+    font-size: 0.65em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .title {
+    font-size: 2.2em;
+  }
+  .service-title {
+    font-size: 1.2em;
+  }
+  .wraper-services {
+    width: 68%;
+  }
+
+  .description-service-container ul li {
+    font-size: 0.85em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 2.8em;
+  }
+  .service-title {
+    font-size: 1.5em;
+  }
+  .wraper-services {
+    width: 64%;
+  }
+
+  .description-service-container ul li {
+    font-size: 1.25em;
+  }
 }

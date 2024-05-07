@@ -45,6 +45,9 @@
 .opinion-text img {
   position: relative;
   width: 31%;
+  height: auto;
+
+  max-height: 100px;
   object-fit: fill;
   border-radius: 10px;
   margin: auto;
@@ -54,6 +57,8 @@
 .reverse img {
   position: relative;
   width: 31%;
+  height: auto;
+  max-height: 100px;
   object-fit: fill;
   border-radius: 10px;
   margin: auto;
@@ -80,4 +85,79 @@
   font-size: 0.6em;
   color: white;
   text-align: center;
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+  .opinion-container {
+    width: 65%;
+  }
+  .opinion-text p {
+    font-size: 0.85em;
+  }
+  .reverse p {
+    font-size: 0.85em;
+  }
+  .opinion-text img {
+    width: 22%;
+    height: auto;
+    max-width: 110px;
+    max-height: 147px;
+  }
+  .reverse img {
+    width: 22%;
+    height: auto;
+    max-width: 110px;
+    max-height: 147px;
+  }
+  .opinion-info-person {
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .opinion-container {
+    width: 65%;
+  }
+  .opinion-text p {
+    font-size: 1em;
+  }
+  .reverse p {
+    font-size: 1em;
+  }
+  .opinion-text img {
+    width: 20%;
+    max-height: 144px;
+  }
+  .reverse img {
+    width: 20%;
+    max-height: 144px;
+  }
+  .opinion-info-person {
+    font-size: 0.8em;
+  }
+}
+@media (width >1023px) {
+  .opinion-container {
+    width: 50%;
+    margin-bottom: 3%;
+  }
+  .opinion-text p {
+    font-size: 1.1em;
+  }
+  .reverse p {
+    font-size: 1.1em;
+  }
+  .opinion-text img {
+    max-height: 140px;
+    width: 18%;
+  }
+
+  .reverse img {
+    max-height: 140px;
+    width: 18%;
+  }
+
+  .opinion-info-person {
+    font-size: 0.85em;
+  }
 }
