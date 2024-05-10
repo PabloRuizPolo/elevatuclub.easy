@@ -73,7 +73,7 @@
 
 .description-service-container ul li {
   list-style-type: disc;
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 
 .description-service-container ul li + li {
@@ -89,7 +89,7 @@
   }
 
   .description-service-container ul li {
-    font-size: 0.65em;
+    font-size: 0.95em;
   }
 }
 
@@ -105,11 +105,11 @@
   }
 
   .description-service-container ul li {
-    font-size: 0.85em;
+    font-size: 1em;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1323px) {
   .title {
     font-size: 2.8em;
   }
@@ -121,6 +121,22 @@
   }
 
   .description-service-container ul li {
-    font-size: 1.25em;
+    font-size: 1.45em;
+  }
+}
+
+@media (min-width: 1324px) {
+  .title {
+    font-size: 2.9em;
+  }
+  .service-title {
+    font-size: 1.9em;
+  }
+  .wraper-services {
+    width: 64%;
+  }
+
+  .description-service-container ul li {
+    font-size: 1.8em;
   }
 }

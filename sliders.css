@@ -1,0 +1,215 @@
+.slider {
+  width: 100%;
+  max-width: 100vw;
+  height: 80vh;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+.list {
+  position: absolute;
+  width: max-content;
+  height: 80vh;
+
+  display: flex;
+  transition: 1s;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.banner_content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 5%;
+  width: 58%;
+  padding: 3%;
+  font-size: 0.6em;
+  background-color: #b0b0fea6;
+  color: white;
+  text-align: center;
+}
+.banner_text {
+  text-align: center;
+  padding: 1% 1%;
+}
+.purple-text {
+  color: #5252ff;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100vw;
+}
+.buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.dots li.active {
+  width: 30px;
+}
+
+.banner-form {
+  border-bottom: none;
+  background: linear-gradient(
+    99deg,
+    rgba(66, 19, 39, 1) 0%,
+    rgba(101, 86, 141, 1) 47%,
+    rgba(82, 82, 255, 1) 100%
+  );
+  height: 50px;
+  width: 134px;
+  z-index: 1;
+  margin-left: 7%;
+  box-shadow: 6px 7px 10px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  display: flex;
+  margin-top: 63vh;
+}
+
+.banner-form:hover {
+  animation: temblor 0.5s linear infinite;
+}
+@keyframes temblor {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(5px, 5px);
+  }
+  50% {
+    transform: translate(-5px, -5px);
+  }
+  75% {
+    transform: translate(5px, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.demo-text {
+  color: white;
+  margin: auto;
+  text-align: center;
+  font-size: 1rem;
+  font-family: var(--main-text-font);
+}
+
+.banner-form div {
+  display: flex;
+}
+
+@media (min-width: 709px) and (max-width: 1026px) {
+  .slider {
+    height: 100vh;
+  }
+  .list {
+    height: 100vh;
+  }
+  .item {
+    height: 100vh;
+  }
+  .banner-form {
+    margin-top: 84vh;
+  }
+  .banner_content {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1027px) and (max-width: 1300px) {
+  .slider {
+    height: 100vh;
+  }
+  .list {
+    height: 100vh;
+  }
+  .item {
+    height: 100vh;
+  }
+  .item img {
+    height: 117%;
+  }
+  .banner-form {
+    margin-top: 84vh;
+    height: 179px;
+    width: 158px;
+  }
+  .banner_content {
+    font-size: 1.3em;
+  }
+  .demo-text {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1300px) {
+  .slider {
+    height: 130vh;
+  }
+  .list {
+    height: 130vh;
+  }
+  .item {
+    height: 130vh;
+  }
+  .item img {
+    height: 125%;
+  }
+  .banner-form {
+    margin-top: 113vh;
+    width: 179px;
+    height: 100px;
+  }
+  .banner_content {
+    font-size: 1.7em;
+  }
+  .demo-text {
+    font-size: 1.5em;
+  }
+}

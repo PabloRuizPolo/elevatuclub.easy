@@ -17,45 +17,53 @@
   margin-top: 21px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-}
-.video-app-div {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.video-app-div h3 {
-  color: white;
-  text-align: center;
-  font-size: 0.85em;
-}
-.youtube-video-div {
-  background-color: aqua;
-  height: 59%;
-  width: 103%;
-  margin-top: 17%;
+  align-items: normal;
+  justify-content: center;
+  padding: 0px 5%;
 }
 .video-app-container {
   display: flex;
   position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.video-app-container p {
+  color: #ffffff99;
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 2px;
 }
 
 .video-app-container img {
   position: relative;
-  max-width: 73%;
-  height: 232px;
-  z-index: 2;
-}
-.video-app-container video {
-  width: 85px;
-  position: absolute;
-  height: 231px;
-  padding-top: 28px;
-  margin-right: 202px;
+  height: 472px;
+  width: auto;
 }
 
+.video-app-container video {
+  width: 197px;
+  position: absolute;
+  height: 377px;
+  margin-top: 46px;
+}
+
+.banner-content {
+  display: none;
+  width: 48%;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4%;
+  font-size: 1.8em;
+  border: solid 1px;
+  border-radius: 15px;
+  margin: 8% 0;
+}
+.banner-content ul li {
+  list-style: none;
+  margin-top: 15%;
+}
 .app-details-wrapper {
   width: 90%;
   margin: 4% auto;
@@ -115,14 +123,12 @@
   margin: auto 5%;
 }
 
-@media (min-width: 550px) and (max-width: 768px) {
-  .youtube-video-div {
-    height: 70%;
-    margin-top: 10%;
+@media (min-width: 600px) {
+  .banner-content {
+    display: flex;
   }
-  .app-div img {
-    max-width: 210px;
-    max-height: 200px;
+  .main-app-section {
+    justify-content: space-between;
   }
 }
 
@@ -130,22 +136,7 @@
   .app-description .title {
     font-size: 1.9em;
   }
-  .youtube-video-div {
-    height: 70%;
-    width: 79%;
-    margin-top: 10%;
-  }
-  .video-app-div h3 {
-    font-size: 1.2em;
-  }
-  .video-app-container img {
-    max-width: 83%;
-    height: 283px;
-  }
-  .video-app-container video {
-    height: 283px;
-    width: 120px;
-  }
+
   .app-div {
     width: 60%;
   }
@@ -163,23 +154,7 @@
 
 @media (width >1023px) {
   .app-description .title {
-    font-size: 2.2em;
-  }
-  .video-app-container img {
-    max-width: 84%;
-    height: 336px;
-  }
-  .video-app-container video {
-    width: 144px;
-    height: 331px;
-  }
-  .video-app-div h3 {
-    font-size: 1.5em;
-  }
-  .youtube-video-div {
-    height: 86%;
-    width: 84%;
-    margin-top: 4%;
+    font-size: 2.4em;
   }
 
   .app-div img {
@@ -196,6 +171,22 @@
     max-width: 200px;
     max-height: 174px;
   }
+  .video-app-container video {
+    width: 253px;
+    height: 527px;
+  }
+  .video-app-container img {
+    height: 621px;
+    width: auto;
+  }
+  .banner-content {
+    font-size: 2.2em;
+  }
+}
+@media (width >1500px) {
+  .main-app-section {
+    padding: 0 10%;
+  }
 }
 
 @media (width >767px) {
@@ -207,5 +198,50 @@
   .app-div-list li {
     margin-top: 5%;
     margin-top: 10%;
+  }
+}
+
+.banner-content h3 {
+  animation-name: vibration;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+
+@keyframes vibration {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bi-arrow-bar-up {
+  animation-name: moveDown;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(
+      10px
+    ); /* Adjust the value for the desired movement distance */
   }
 }
