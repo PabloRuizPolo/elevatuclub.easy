@@ -187,6 +187,9 @@
   .main-app-section {
     padding: 0 10%;
   }
+  .app-description .title {
+    font-size: 2.7em;
+  }
 }
 
 @media (width >767px) {

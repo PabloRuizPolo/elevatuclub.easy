@@ -87,18 +87,21 @@
   .wraper-services {
     width: 85%;
   }
+  .service-title {
+    font-size: 1.25em;
+  }
 
   .description-service-container ul li {
     font-size: 0.95em;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .title {
     font-size: 2.2em;
   }
   .service-title {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
   .wraper-services {
     width: 68%;
@@ -114,7 +117,7 @@
     font-size: 2.8em;
   }
   .service-title {
-    font-size: 1.7em;
+    font-size: 1.8em;
   }
   .wraper-services {
     width: 64%;
@@ -130,7 +133,7 @@
     font-size: 2.9em;
   }
   .service-title {
-    font-size: 1.9em;
+    font-size: 2em;
   }
   .wraper-services {
     width: 64%;
